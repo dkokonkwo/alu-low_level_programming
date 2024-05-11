@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-/* print line without using printf */
+/**
+ * void - prints string on new line
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-/* prints line below and returns 0 */
 puts("\"Programming is like building a multilingual puzzle");
 return (0); }
