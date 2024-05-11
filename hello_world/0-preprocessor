@@ -1,6 +1,2 @@
 #!/bin/bash
-
-# Get the file name from variable
-file="$CFILE"
-
-gcc "$file" -E -o c
+gcc "$C_FILE" -E -o c
