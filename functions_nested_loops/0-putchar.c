@@ -4,10 +4,9 @@ int _putchar(char c);
  *
  * Return: Always 0 (Success)
  */
-int a = 0;
-
 int main(void)
 {
+int a = 0;
 char word[] = "_putchar";
 while (a < 8)
 {
