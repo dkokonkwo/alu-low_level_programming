@@ -4,12 +4,13 @@ int _putchar(char c);
  *
  * Return: Always 0 (Success)
  */
-char word[8] = "_putchar"; 
+char word[8];
 int a = 0;
 
-int main()
+int main(void)
 {
-while ( a < 8)
+word = "_putchar";
+while (a < 8)
 {
 _putchar(word[a]);
 a++;
