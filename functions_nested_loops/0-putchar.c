@@ -6,10 +6,9 @@ int _putchar(char c);
  */
 char word[8];
 int a = 0;
-
+word[8] = "_putchar";
 int main(void)
 {
-word = "_putchar";
 while (a < 8)
 {
 _putchar(word[a]);
