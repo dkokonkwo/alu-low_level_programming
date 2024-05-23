@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - comment
+ * print_alphabet - comment
  *
  * Return: Always 0 (Success)
  */
