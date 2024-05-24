@@ -11,11 +11,11 @@ int _abs(int c)
 int a;
 if (c > -1)
 {
-return ("%d", c);
+return (c);
 }
 else
 {
 a = c * -1;
-return ("%d", a);
+return (a);
 }
 }
