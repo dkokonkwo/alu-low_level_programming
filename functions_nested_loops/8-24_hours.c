@@ -9,7 +9,7 @@ int a;
 int b;
 int hour;
 hour = 0;
-while (hour < 2)
+while (hour < 23)
 {
 for (int i = 0; i < 60; i++)
 {
