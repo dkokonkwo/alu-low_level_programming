@@ -17,7 +17,7 @@ return (last);
 }
 else
 {
-last = - last;
+last = -last;
 _putchar (last + '0');
 return (last);
 }
