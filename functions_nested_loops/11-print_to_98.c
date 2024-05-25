@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - prints from n to 98
- * @n - initial integer
+ * @n: initial integer
  */
 
 void print_to_98(int n)
