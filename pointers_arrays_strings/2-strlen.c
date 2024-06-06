@@ -11,5 +11,5 @@ while (*ptr)
 {
 ++ptr;
 }
-return (ptr - str);
+return (ptr - s);
 }
