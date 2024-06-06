@@ -1,8 +1,11 @@
 #include "main.h"
 /**
+ * _strlen - gets length of string
+ * Return: length
+ *
  * print_rev - prints string in reverse
  * @s: string
- * _strlen - calculates string length
+ * 
  */
 int _strlen(char *s)
 {
