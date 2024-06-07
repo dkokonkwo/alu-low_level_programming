@@ -3,16 +3,24 @@
  * rev_string - reverses a string
  * @s - string argument
  */
-int _strlen(char *s)
-{
-char *ptr = s;
-while (*ptr)
-{
-++ptr;
-}
-return (ptr - s);
-}
-
-
 void rev_string(char *s)
+{
+char *start = s;
+char *end = s;
+char temp;
 
+while (*end != '\0')
+{
+end++;
+}
+end--;
+
+while (start < end)
+{
+temp = *start;
+*start = *end;
+*end = temp;
+start++;
+end--;
+}
+}
