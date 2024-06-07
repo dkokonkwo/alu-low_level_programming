@@ -1,21 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strlen - gets length of string
- * @s: string
- * Return: length
- */
-int _strlen(char *s)
-{
-char *ptr = s;
-while (*ptr)
-{
-++ptr;
-}
-return (ptr - s);
-}
-
-/**
  * print_array - prints n elements in array
  * @a: array
  * @n: number of elements to print
