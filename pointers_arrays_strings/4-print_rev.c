@@ -2,10 +2,6 @@
 /**
  * _strlen - gets length of string
  * Return: length
- *
- * print_rev - prints string in reverse
- * @s: string
- * 
  */
 int _strlen(char *s)
 {
@@ -17,6 +13,10 @@ while (*ptr)
 return (ptr - s);
 }
 
+/**
+ * print_rev - prints string in reverse
+ * @s: string
+ */
 void print_rev(char *s)
 {
 int len = _strlen(s);
