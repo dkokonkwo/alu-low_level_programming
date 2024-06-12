@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _sqrt_help - helper function to find square root
- * @n: num to find square root of 
+ * @n: num to find square root of
  * @i: number to test as square root
  *
  * Return: i or -1 if none exists
