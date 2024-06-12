@@ -1,17 +1,18 @@
 #include "main.h"
 /**
- * _strlen - calculates string length
+ * _strlen_recursion - returns the length of string
  * @s: string argument
+ *
  * Return: length of string
  */
-int _strlen(char *s)
+
+int _strlen_recursion(char *s)
 {
-char *ptr = s;
-while (*ptr)
+if (*s == '\0')
 {
-++ptr;
+return (0);
 }
-return (ptr - s);
+return (1 + _strlen_recursion(s + 1));
 }
 
 /**
@@ -45,7 +46,7 @@ return (pal_helper(s, start + 1, end - 1));
 
 int is_palindrome(char *s)
 {
-int length = _strlen(s);
+int length = _strlen_recursion(s);
 if (length == 0)
 {
 return (1);
