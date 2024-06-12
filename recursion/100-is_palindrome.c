@@ -43,7 +43,7 @@ return (pal_helper(s, start + 1, end - 1));
  * Return: 0 or 1
  */
 
-int is_palindrome(char *S)
+int is_palindrome(char *s)
 {
 int length = _strlen(s);
 if (length == 0)
