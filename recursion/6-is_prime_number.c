@@ -3,6 +3,8 @@
  * _prime_helper - helper function to find if num is prime
  * @n: number to check
  * @i: divisor
+ *
+ * Return: 1 or 0
  */
 
 int _prime_helper(int n, int i)
@@ -22,7 +24,7 @@ return (_prime_helper(n, i + 1));
  * is_prime_number - check if a num is prime or not
  * @n: num argument to check
  *
- * Return: 0 or -1
+ * Return: 0 or 1
  */
 
 int is_prime_number(int n)
