@@ -2,6 +2,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * _strcpy - copy string
+ * @dest: destination string
+ * @src: source string
+ *
+ * Return: pointer to copied string
+ */
+char *_strcpy(char *dest, char *src)
+{
+char *ptr = dest;
+while (*src)
+{:wq
+*dest++ = *src++;
+}
+*dest++ = '\0';
+return (ptr);
+}
+
+
+/**
  * _strlen - calculates string length
  * @s: string argument
  * Return: length of string
@@ -31,10 +50,6 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-while (*str)
-{
-*ptr++ == *str++;
-}
-*ptr++ = '\0';
+_strcpy(ptr, str);
 return (ptr);
 }
