@@ -45,7 +45,7 @@ return (ptr - s);
 char *_strdup(char *str)
 {
 char *ptr = (char *) malloc(_strlen(str) + 1);
-if (ptr == NULL)
+if (ptr == NULL || str == NULL)
 {
 return (NULL);
 }
