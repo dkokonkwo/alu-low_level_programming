@@ -12,13 +12,12 @@ char *_strcpy(char *dest, char *src)
 {
 char *ptr = dest;
 while (*src)
-{:wq
+{
 *dest++ = *src++;
 }
 *dest++ = '\0';
 return (ptr);
 }
-
 
 /**
  * _strlen - calculates string length
