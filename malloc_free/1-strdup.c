@@ -2,6 +2,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * _strlen - calculates string length
+ * @s: string argument
+ * Return: length of string
+ */
+int _strlen(char *s)
+{
+char *ptr = s;
+while (*ptr)
+{
+++ptr;
+}
+return (ptr - s);
+}
+
+
+/**
  * _strdup - duplicates string to new memory
  * @str: string argument
  *
@@ -10,12 +26,15 @@
 
 char *_strdup(char *str)
 {
-size_t len = strlen(str)
-char *ptr = (char *) malloc(len + 1);
+char *ptr = (char *) malloc(_strlen(str) + 1);
 if (ptr == NULL)
 {
 return (NULL);
 }
-strcpy(ptr, str);
+while (*str)
+{
+*ptr++ == *str++;
+}
+*ptr++ = '\0';
 return (ptr);
 }
