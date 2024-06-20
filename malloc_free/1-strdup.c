@@ -44,10 +44,8 @@ return (ptr - s);
 
 char *_strdup(char *str)
 {
-if (str == NULL)
+if (str != NULL)
 {
-return (NULL);
-}
 char *ptr = (char *) malloc(_strlen(str) + 1);
 if (ptr == NULL)
 {
@@ -55,4 +53,6 @@ return (NULL);
 }
 _strcpy(ptr, str);
 return (ptr);
+}
+return (NULL);
 }
