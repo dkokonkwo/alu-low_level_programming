@@ -15,22 +15,23 @@ int **alloc_grid(int width, int height)
 {
 int **array;
 int rows, columns;
+int i;
 
 if (width <= 0 || height <= 0)
 return (NULL);
 array = (int **) malloc(height * sizeof(int *));
-if (array == '\0')
+if (array == NULL)
 {
 return (NULL);
 }
 for (rows = 0; rows < height; rows++)
 {
 array[rows] = (int *) malloc(width * sizeof(int));
-if (array[rows] == '\0')
+if (array[rows] == NULL)
 {
-for (; rows >= 0; rows--)
+for (i = 0; i < rows; i++)
 {
-free(array[rows]);
+free(array[i]);
 }
 free(array);
 return (NULL);
