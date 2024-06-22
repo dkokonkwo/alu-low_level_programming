@@ -19,7 +19,7 @@ int rows, columns;
 if (width <= 0 || height <= 0)
 return (NULL);
 array = (int **) malloc(height * sizeof(int *));
-if (*array == '\0')
+if (array == '\0')
 {
 return (NULL);
 }
