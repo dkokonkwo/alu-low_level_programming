@@ -1,7 +1,8 @@
 #include "dog.h"
 #define NULL 0
 
-/* init_dog - initializes a variable dog
+/**
+ *init_dog - initializes a variable dog
  * @d: dog pointer to structure
  * @name: name element
  * @age: age element
