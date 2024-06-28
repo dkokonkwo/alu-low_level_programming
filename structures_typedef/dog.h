@@ -1,7 +1,13 @@
-/* dog.h */
+/**
+ * dog.h 
+ */
 
 #ifndef DOG_H
 #define DOG_H
+
+/**
+ * dog - struture for a dog with three elements
+ */
 
 struct dog
 {
