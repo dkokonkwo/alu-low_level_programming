@@ -8,14 +8,12 @@
  *
  * Return: newly created dog
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 int i;
 char *name_dog;
 char *owner_dog;
 dog_t *dog_dog = malloc(sizeof(dog_t));
-
 if (dog_dog == NULL)
 {
 return (NULL);
@@ -32,7 +30,6 @@ for (i = 0; name[i]; i++)
 name_dog[i] = name[i];
 }
 name_dog[i] = '\0';
-
 for (i = 0; owner[i]; i++)
 	;
 owner_dog = malloc((i + 1) * sizeof(char));
@@ -47,10 +44,8 @@ for (i = 0; owner[i]; i++)
 owner_dog[i] = owner[i];
 }
 owner_dog[i] = '\0';
-
 dog_dog->name = name_dog;
 dog_dog->age = age;
 dog_dog->owner = owner_dog;
-
 return (dog_dog);
 }
