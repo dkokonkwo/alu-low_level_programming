@@ -2,17 +2,17 @@
 #define DOG_H
 
 /**
- * dog - struture for a dog with three elements
+ * struct dog - struture for a dog with three elements
  * @name: dog's name
  * @age: dog's age
  * @owner: dog's owner
  */
 
-typedef struct dog
+struct dog
 {
 char *name;
 float age;
 char *owner;
-} dog;
+};
 
 #endif /* DOG_H */
