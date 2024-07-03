@@ -22,6 +22,10 @@ if (j == n)
 {
 printf("%3d\n", (i * j));
 }
+else if ((i * j) == 0)
+{
+printf("%d, ", (i * j));
+}
 else
 {
 printf("%3d, ", (i * j));
