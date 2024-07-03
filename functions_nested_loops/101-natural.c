@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -18,4 +19,16 @@ final += count;
 count++;
 }
 printf("%d\n", final);
+}
+
+/**
+ * main - checks the code
+ *
+ * Return: Always 0
+ */
+
+int main(void)
+{
+natural();
+return (0);
 }
