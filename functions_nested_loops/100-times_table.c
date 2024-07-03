@@ -16,7 +16,7 @@ return;
 }
 if (n == 0)
 {
-printf("%d", n);
+printf("%d\n", n);
 return;
 }
 for (i = 0; i <= n; i++)
