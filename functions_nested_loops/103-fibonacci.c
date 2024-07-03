@@ -9,17 +9,18 @@ void fibo(void)
 long int sum = 1;
 long int prev = 0;
 long int tmp;
-while (sum < 3000000)
+long int even = 0;
+while (sum < 4000000)
 {
 tmp = sum;
 sum += prev;
 if ((sum % 2) == 0)
 {
-printf("%ld, ", sum);
+even += sum;
 }
 prev = tmp;
 }
-printf("%ld\n", sum);
+printf("%ld\n", even);
 }
 
 /**
