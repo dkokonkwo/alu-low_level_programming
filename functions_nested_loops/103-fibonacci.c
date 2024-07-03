@@ -9,7 +9,6 @@ void fibo(void)
 long int sum = 1;
 long int prev = 0;
 long int tmp;
-int count = 0;
 while (sum < 3000000)
 {
 tmp = sum;
