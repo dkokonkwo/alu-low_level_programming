@@ -8,9 +8,11 @@ void fibo(void)
 {
 long int sum = 1;
 long int prev = 0;
+long int tmp;
 int count = 0;
 while (count < 50)
 {
+tmp = sum;
 sum += prev;
 if (count < 49)
 {
@@ -20,7 +22,7 @@ else
 {
 printf("%ld\n", sum);
 }
-prev = sum;
+prev = tmp;
 count ++;
 }
 }
