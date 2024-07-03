@@ -23,7 +23,7 @@ else
 printf("%ld\n", sum);
 }
 prev = tmp;
-count ++;
+count++;
 }
 }
 
