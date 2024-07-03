@@ -20,7 +20,7 @@ printf("%ld, ", sum);
 }
 prev = tmp;
 }
-printf("%d\n", sum);
+printf("%ld\n", sum);
 }
 
 /**
