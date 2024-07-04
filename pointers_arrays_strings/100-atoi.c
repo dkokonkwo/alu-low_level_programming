@@ -2,6 +2,8 @@
 /**
  * _atoi - convert string to integer
  * @s: string argument
+ *
+ * Return: converted integer
  */
 
 int _atoi(char *s)
