@@ -8,7 +8,8 @@
 
 int _atoi(char *s)
 {
-int result = 0;
+long int final; 
+long int result = 0;
 int sign = 1;
 while (*s && ((*s < '0') || (*s > '9')))
 {
@@ -24,5 +25,6 @@ while (*s && (*s >= '0') && (*s <= '9'))
 result = result * 10 + (*s - '0');
 s++;
 }
-return (result * sign);
+final = result * sign;
+return (final);
 }
