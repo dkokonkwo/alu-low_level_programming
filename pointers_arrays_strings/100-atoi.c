@@ -19,7 +19,7 @@ s++;
 
 while (*s && ((*s >= '0') || (*s <= '9')))
 {
-result = result * 10 + (*s - '0')
+result = result * 10 + (*s - '0');
 }
 return (result * sign);
 }
