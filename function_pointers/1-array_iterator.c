@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stddef.h>
 #define NULL 0
 
 /**
