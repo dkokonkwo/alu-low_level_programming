@@ -11,11 +11,11 @@
  * Return: result or error
  */
 
-int main(char *argv[])
+int main(int argc, char *argv[])
 {
 int a, b, i;
 int (*f)(int, int);
-if ((sizeof(argv) / sizeof(argv[0])) != 4)
+if (argc != 4)
 {
 printf("Error\n");
 exit(98);
