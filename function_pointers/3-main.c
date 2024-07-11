@@ -13,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-int a, b, i;
+int a, b;
 int (*f)(int, int);
 if (argc != 4)
 {
@@ -22,7 +22,7 @@ exit(98);
 }
 a = atoi(argv[1]);
 b = atoi(argv[3]);
-if (b == 0 && (strmp("/", argv[2]) == 0 || strcmp("%", argv[2]) == 0))
+if (b == 0 && (strcmp("/", argv[2]) == 0 || strcmp("%", argv[2]) == 0))
 {
 printf("Error\n");
 exit(100);
@@ -33,6 +33,6 @@ if (f == NULL)
 printf("Error\n");
 exit(99);
 }
-printf("d\n", f(a, b));
+printf("%d\n", f(a, b));
 return (0);
 }
