@@ -1,4 +1,7 @@
 /* main.h */
+#include <unistd.h>
+#include <stdio.h>
+#include <stddef.h>
 
 #ifndef MAIN_H
 #define MAIN_H
