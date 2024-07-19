@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 /**
  * read_textfile - prints letters from a text file
@@ -17,19 +19,27 @@ char *ch = malloc(sizeof(char) * letters);
 
 if (filename == NULL || ch == NULL)
 {
+free(ch);
 return (0);
 }
 
 file = open(filename, O_RDONLY);
 if (file == -1)
 {
+free(ch);
 return (0);
 }
 sz1 = read(file, ch, letters);
+if (sz1 == -1)
+{
+free(ch);
+close(file);
+return (0);
+}
 ch[sz1] = '\0';
 sz2 = write(STDOUT_FILENO, ch, sz1);
 free(ch);
-if (fclose(file) < 0)
+if (close(file) < 0)
 {
 return (0);
 }
