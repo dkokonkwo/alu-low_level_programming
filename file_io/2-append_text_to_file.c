@@ -25,7 +25,7 @@ if (text_content == NULL)
 return (1);
 }
 
-while(text_content[i])
+while (text_content[i])
 {
 i++;
 }
