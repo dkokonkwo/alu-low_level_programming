@@ -2,7 +2,7 @@
 
 /**
  * create_file - createa new text file
- * @filname: name of new file
+ * @filename: name of new file
  * @text_content: text to add to file
  *
  * Return: 1 on success else -1
