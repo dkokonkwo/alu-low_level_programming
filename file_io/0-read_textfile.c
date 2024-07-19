@@ -28,7 +28,7 @@ if (file == NULL)
 return (0);
 }
 
-while ((ch = fgetc(file)) != EOF && i <= letters)
+while ((ch = fgetc(file)) != EOF && i < letters)
 {
 _putchar(ch);
 i++;
