@@ -28,14 +28,12 @@ if (file == NULL)
 return (0);
 }
 
-while((ch = fgetc(file)) != EOF && i <= letters)
+while ((ch = fgetc(file)) != EOF && i <= letters)
 {
 _putchar(ch);
-if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-{
 i++;
 }
-}
+
 fclose(file);
 return (i);
 }
