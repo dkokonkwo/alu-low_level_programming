@@ -1,6 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 #include <stdio.h>
+#include <stddef.h>
 
 /**
  * read_textfile - prints letters from a text file
