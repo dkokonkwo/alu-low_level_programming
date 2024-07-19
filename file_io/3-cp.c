@@ -45,7 +45,7 @@ if (s1 < 0)
 {
 cannot_read(argv[1]);
 }
-s2 = write(f2, buff, 1024)
+s2 = write(f2, buff, 1024);
 if (s2 < 0)
 {
 cannot_write(argv[2]);
@@ -58,7 +58,7 @@ if (s1 < 0)
 {
 cannot_read(argv[1]);
 }
-s2 = write(f2, buff, 1024)
+s2 = write(f2, buff, 1024);
 if (s2 < 0)
 {
 cannot_write(argv[2]);
