@@ -45,20 +45,20 @@ if (s1 < 0)
 {
 cannot_read(argv[1]);
 }
-s2 = write(f2, buff, 1024);
+s2 = write(f2, buff, s1);
 if (s2 < 0)
 {
 cannot_write(argv[2]);
 }
 
-while(s1 == 1024)
+while (s1 == 1024)
 {
 s1 = read(f1, buff, 1024);
 if (s1 < 0)
 {
 cannot_read(argv[1]);
 }
-s2 = write(f2, buff, 1024);
+s2 = write(f2, buff, s1);
 if (s2 < 0)
 {
 cannot_write(argv[2]);
